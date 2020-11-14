@@ -4,7 +4,7 @@ use std::sync::mpsc::{self, TryRecvError};
 use std::thread;
 use std::time::Duration;
 
-const LOCAL: &str = "127.0.0.1:6000";
+const LOCAL: &str = "45.79.53.62:6000";
 const MSG_SIZE: usize = 32;
 
 fn main() {
@@ -18,6 +18,7 @@ fn main() {
         match client.read_exact(&mut buff) {
             Ok(_) => {
                 let msg = buff.into_iter().take_while(|&x| x != 0).collect::<Vec<_>>();
+                let msg = String::from_utf8(msg).expect("Invalid utf8 message");
                 println!("message recv {:?}", msg);
             },
             Err(ref err) if err.kind() == ErrorKind::WouldBlock => (),
