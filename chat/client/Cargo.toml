@@ -1,6 +1,8 @@
 [package]
 name = "client"
 version = "0.1.0"
-authors = ["tensor-programming <abeltensor@tensor-programming.com>"]
+authors = ["cowboy8625 <https://github.com/cowboy8625>"]
+edition = "2018"
 
 [dependencies]
+crossterm = "0.18.2"
