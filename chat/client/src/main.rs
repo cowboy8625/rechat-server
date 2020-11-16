@@ -12,7 +12,7 @@ use std::sync; // Arc, Mutex
 
 
 const LOCAL: &str = "45.79.53.62:6000";
-const MSG_SIZE: usize = 32;
+const MSG_SIZE: usize = 100;
 
 struct Display {
     write: Stdout,
