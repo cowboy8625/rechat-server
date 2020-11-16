@@ -82,7 +82,11 @@ impl ClientData {
                     match key {
                         event::KeyEvent { code, modifiers: _ } => {
                             match code {
-                                event::KeyCode::Esc => break,
+                                event::KeyCode::Esc => {break;},
+                                event::KeyCode::Backspace => {
+                                    self.buff.pop();
+                                    self.display.chat_bar(&self.buff);
+                                },
                                 event::KeyCode::Enter => {
                                     let msg = self.buff.trim().to_string();
                                     if msg == ":quit" || self.tx.send(msg).is_err() {break}
