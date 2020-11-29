@@ -25,12 +25,14 @@ Messages have a max size of `2048` characters, while the data has a hole is not 
 
 ## Clients
 
-- [Rechat (GUI Rust)](https://github.com/cowboy/rechat-gui-client)
+- [Rechat (GUI Rust)](https://github.com/cowboy8625/rechat-gui-client)
 - [Chat Client (GUI Java)](https://github.com/BJTMastermind/ChatClient)
 
 ## TODO
 
-- [ ] Change Server from data serialization from just a byte array to
-Json or [Erlang](http://www1.erlang.org/doc/apps/erts/erl_ext_dist.html)
+- [ ] server keeps message log.
+- [ ] send to client when users log get online.
+- [ ] Swap from spawning threads to asynchronous behavior like tokei.
 - [ ] Work on TUI for Client.
-- [ ] Work on GUI for Client. (Python or Rust).
+- [ ] Work on GUI for Client in Rust.
+- [ ] Work on GUI for Client in Python.
