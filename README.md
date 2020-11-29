@@ -1,11 +1,9 @@
 # Rusty Chat
 
-[![docs.rs](https://docs.rs/rechat-server/badge.svg)](https://docs.rs/rechat-server)
-[![crates.io](https://img.shields.io/crates/v/rechat-server.svg)](https://crates.io/crates/rechat-server)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![lastupdated](https://img.shields.io/github/last-commit/cowboy8625/rechat-server)
-![GitHub repo size](https://img.shields.io/github/repo-size/cowboy8625/rechat-server)
 ![issuse](https://img.shields.io/github/issues/cowboy8625/rechat-server)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![GitHub repo size](https://img.shields.io/github/repo-size/cowboy8625/rechat-server)
 ![Discord](https://img.shields.io/discord/509849754155614230)
 ![Lines of Code](https://tokei.rs/b1/github/cowboy8625/rechat-server)
 
@@ -27,8 +25,8 @@ Messages have a max size of `2048` characters, while the data has a hole is not 
 
 ## Clients
 
-[Rechat (GUI Rust)](https://github.com/cowboy/rechat-gui-client)
-[Chat Client (GUI Java)](https://github.com/BJTMastermind/ChatClient)
+- [Rechat (GUI Rust)](https://github.com/cowboy/rechat-gui-client)
+- [Chat Client (GUI Java)](https://github.com/BJTMastermind/ChatClient)
 
 ## TODO
 
